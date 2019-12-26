@@ -6,9 +6,36 @@
             "x": 0,
             "y": 0,
             "uniqueID": 465512,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "Geometry",
+                    "ioValue": 10
+                }
+            ],
             "topLevel": true,
             "allAtoms": [
+                {
+                    "atomType": "Input",
+                    "name": "Geometry",
+                    "x": 30,
+                    "y": 157,
+                    "uniqueID": 565296,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Code",
+                    "name": "Code",
+                    "x": 557,
+                    "y": 120,
+                    "uniqueID": 761735,
+                    "ioValues": [
+                        {
+                            "name": "Input1",
+                            "ioValue": 10
+                        }
+                    ],
+                    "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Input1){\n  return Input1.wireframe()        //return must be geometry;\n}\n\nreturn main(Input1)"
+                },
                 {
                     "atomType": "Output",
                     "name": "Output",
@@ -17,7 +44,21 @@
                     "ioValues": []
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Input1",
+                    "ap2Primary": false,
+                    "ap1ID": 565296,
+                    "ap2ID": 761735
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 761735
+                }
+            ],
             "fileTypeVersion": 1
         }
     ],
